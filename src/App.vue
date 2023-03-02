@@ -1,7 +1,8 @@
 <script setup lang="ts">
 import HelloWorld from './components/HelloWorld.vue'
+import BrowserViewCase from './components/BrowserViewCase.vue';
 
-console.log("[App.vue]", `Hello world from Electron ${process.versions.electron}!`)
+console.log("[App.vue]", `Hello world from Electron!`)
 </script>
 
 <template>
@@ -16,6 +17,7 @@ console.log("[App.vue]", `Hello world from Electron ${process.versions.electron}
       <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
     </a>
   </div>
+  <BrowserViewCase />
   <HelloWorld msg="Electron + Vite + Vue" />
   <div class="flex-center">
     Place static files into the <code>/public</code> folder
